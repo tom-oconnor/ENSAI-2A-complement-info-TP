@@ -1,4 +1,4 @@
-from unittest import TestCase
+from unittest import TestCase, TextTestRunner, TestLoader
 
 from business_object.pokemon.defender_pokemon import DefenderPokemon
 from business_object.statistic import Statistic
@@ -15,3 +15,9 @@ class TestDefenderPokemon(TestCase):
 
         # THEN
         self.assertEqual(2, multiplier)
+
+
+if __name__ == '__main__':
+    # Run the tests
+    result = TextTestRunner().run(
+        TestLoader().loadTestsFromTestCase(TestDefenderPokemon))
