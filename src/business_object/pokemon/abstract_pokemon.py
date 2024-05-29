@@ -4,11 +4,7 @@ from abc import ABC, abstractmethod
 from business_object.statistic import Statistic
 
 
-<<<<<<< HEAD:src/business_object/pokemon/pokemon.py
-class Pokemon:
-=======
 class AbstractPokemon(ABC):
->>>>>>> tp1_q4_correction:src/business_object/pokemon/abstract_pokemon.py
     """
     An abstract pokemon. As an abstract class, it as to be inherited
     """
@@ -17,13 +13,7 @@ class AbstractPokemon(ABC):
     # Constructor
     # -------------------------------------------------------------------------
 
-<<<<<<< HEAD:src/business_object/pokemon/pokemon.py
-    def __init__(
-        self, stat_max=None, stat_current=None, level=0, name=None, type_pk=None
-    ):
-=======
     def __init__(self, stat_max=None, stat_current=None, level=0, name=None) -> None:
->>>>>>> tp1_q4_correction:src/business_object/pokemon/abstract_pokemon.py
         # -----------------------------
         # Attributes
         # -----------------------------
